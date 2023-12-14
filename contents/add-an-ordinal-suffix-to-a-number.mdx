@@ -1,0 +1,30 @@
+---
+category: Number
+created: '2020-05-16'
+title: Add an ordinal suffix to a number
+updated: '2021-10-13'
+---
+
+**JavaScript version**
+
+```js addOrdinal.js
+// `n` is a position number
+const addOrdinal = (n) => `${n}${['st', 'nd', 'rd'][((((n + 90) % 100) - 10) % 10) - 1] || 'th'}`;
+```
+
+**TypeScript version**
+
+```ts addOrdinal.ts
+const addOrdinal = (n: number): string => `${n}${['st', 'nd', 'rd'][((((n + 90) % 100) - 10) % 10) - 1] || 'th'}`;
+```
+
+**Examples**
+
+```js examples.js
+addOrdinal(1); // '1st'
+addOrdinal(2); // '2nd'
+addOrdinal(3); // '3rd'
+addOrdinal(11); // '11th'
+addOrdinal(12); // '13th'
+addOrdinal(13); // '13th'
+```

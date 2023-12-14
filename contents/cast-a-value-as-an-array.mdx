@@ -1,0 +1,25 @@
+---
+category: Array
+title: Cast a value as an array
+created: '2021-04-04'
+updated: '2021-10-22'
+---
+
+**JavaScript version**
+
+```js castArray.js
+const castArray = (value) => (Array.isArray(value) ? value : [value]);
+```
+
+**TypeScript version**
+
+```ts castArray.ts
+const castArray = <T,_>(value: T | T[]): T[] => (Array.isArray(value) ? value : [value]);
+```
+
+**Examples**
+
+```js examples.js
+castArray(1); // [1]
+castArray([1, 2, 3]); // [1, 2, 3]
+```

@@ -1,0 +1,18 @@
+---
+category: String
+created: '2020-04-19'
+title: Get the file extension from a file name
+updated: '2021-10-13'
+---
+
+**JavaScript version**
+
+```js ext.js
+const ext = (fileName) => fileName.split('.').pop();
+```
+
+**TypeScript version**
+
+```ts ext.ts
+const ext = (fileName: string): string => fileName.split('.').pop();
+```

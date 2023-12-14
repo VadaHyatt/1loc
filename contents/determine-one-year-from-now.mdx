@@ -1,0 +1,22 @@
+---
+category: Date Time
+created: '2022-08-21'
+title: Determine one year from now
+---
+
+**JavaScript version**
+
+```js plusOneYear.js
+const plusOneYear = ((d) => new Date(d.setFullYear(d.getFullYear() + 1)))(new Date());
+```
+
+**TypeScript version**
+
+```ts plusOneYear.ts
+const plusOneYear: Date = ((d) => new Date(d.setFullYear(d.getFullYear() + 1)))(new Date());
+```
+
+## See also
+
+-   [Get the tomorrow date](https://phuoc.ng/collection/1-loc/get-the-tomorrow-date/)
+-   [Get the yesterday date](https://phuoc.ng/collection/1-loc/get-the-yesterday-date/)

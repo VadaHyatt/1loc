@@ -1,0 +1,28 @@
+---
+category: Misc
+contributors:
+    - codepo8
+created: '2020-05-01'
+title: Emulate a dice throw
+updated: '2021-10-13'
+---
+
+**JavaScript version**
+
+```js throwdice.js
+const throwdice = () => ~~(Math.random() * 6) + 1;
+```
+
+**TypeScript version**
+
+```ts throwdice.ts
+const throwdice = (): number => ~~(Math.random() * 6) + 1;
+```
+
+**Examples**
+
+```js examples.js
+throwdice(); // 4
+throwdice(); // 1
+throwdice(); // 6
+```

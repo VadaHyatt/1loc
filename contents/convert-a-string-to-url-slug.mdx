@@ -1,0 +1,32 @@
+---
+category: String
+created: '2020-05-04'
+title: Convert a string to URL slug
+updated: '2021-10-13'
+---
+
+**JavaScript version**
+
+```js slugify.js
+const slugify = (str) =>
+    str
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w-]+/g, '');
+```
+
+**TypeScript version**
+
+```ts slugify.ts
+const slugify = (str: string): string =>
+    str
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w-]+/g, '');
+```
+
+**Examples**
+
+```js examples.js
+slugify('Chapter One: Once upon a time...'); // 'chapter-one-once-upon-a-time'
+```

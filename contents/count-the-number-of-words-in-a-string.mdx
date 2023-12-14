@@ -1,0 +1,26 @@
+---
+category: String
+created: '2021-05-26'
+title: Count the number of words in a string
+updated: '2021-10-13'
+---
+
+**JavaScript version**
+
+```js countWords.js
+const countWords = (str) => str.trim().split(/\s+/).length;
+```
+
+**TypeScript version**
+
+```ts countWords.ts
+const countWords = (str: string): number => str.trim().split(/\s+/).length;
+```
+
+**Examples**
+
+```js examples.js
+countWords('Hello World'); // 2
+countWords('Hello    World'); // 2
+countWords('  Hello  World  '); // 2
+```
